@@ -1,0 +1,21 @@
+{
+  "description": "Auto-activate the llms-txt skill when an llms.txt-family file is edited or mentioned.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/llmstxt_gate.py\"" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/llmstxt_gate.py\"" }
+        ]
+      }
+    ]
+  }
+}
