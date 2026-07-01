@@ -1,6 +1,6 @@
 ---
 name: llms-txt
-description: Use when reading, writing, editing, reviewing, auditing, or generating an llms.txt, llms-full.txt, llms-ctx.txt, llms-ctx-full.txt, or per-page .md file, or a site's AI-ingestion text files, across the llmstxt.org and Mintlify specs, even when the spec is not named. Covers the H1 + blockquote + H2 link-list grammar, the Optional section, the .md page convention, discovery headers, and llms_txt2ctx XML generation for any tech stack. Not for general markdown, robots.txt, or sitemap work.
+description: Use when reading, writing, editing, reviewing, auditing, or generating an llms.txt, llms-full.txt, llms-ctx.txt, llms-ctx-full.txt, or per-page .md file, or a site's AI-ingestion text files, across the llmstxt.org and Mintlify specs, even when the spec is not named. Covers the H1 + blockquote + H2 link-list grammar, the Optional section, the .md page convention, discovery headers, and llms_txt2ctx XML generation for any tech stack. Also use for GEO and AEO, AI search readiness, and passing Google Lighthouse Agentic Browsing "llms.txt follows recommendations" in PageSpeed Insights. Not for general markdown, robots.txt, or sitemap work.
 ---
 
 # llms.txt family

@@ -6,7 +6,7 @@
     {
       "name": "llms-txt",
       "source": "./",
-      "description": "Validate, author, and generate the full llms.txt file family across the llmstxt.org and Mintlify specs."
+      "description": "Validate, author, and generate the full llms.txt family (llms.txt, llms-full.txt, llms-ctx, per-page .md) for AI search, GEO/AEO, and Google Lighthouse Agentic Browsing, across the llmstxt.org and Mintlify specs."
     }
   ]
 }
