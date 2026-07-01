@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Built for Claude](https://img.shields.io/badge/Built%20for-Claude-d97757.svg)](https://claude.com/claude-code)
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](.claude-plugin/plugin.json)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](.claude-plugin/plugin.json)
 
 > Validate, author, and generate the whole llms.txt file family against the llmstxt.org and Mintlify specs.
 
@@ -102,6 +102,11 @@ Built by **Eric Forte**, AI Automation Engineer.
 - LinkedIn: [@johnericforte](https://www.linkedin.com/in/johnericforte/)
 
 ---
+
+## Changelog
+
+- **0.2.0**: Validator now flags non-link content and non-fetchable link targets inside H2 sections, and checks `llms-full.txt` for an H1 and index-vs-dump shape. Added `reference/stacks.md` so serving, discovery headers, and per-page `.md` work across static generators, Next.js/Vercel, Netlify, Apache, Nginx, WordPress, and managed docs. Rewrote the context-file guidance for how the tool actually behaves (fetches the live site, needs `.md` links, isolated install).
+- **0.1.0**: Initial release: validator, spec reference, and auto-activation hooks.
 
 ## License
 
