@@ -11,3 +11,4 @@ Free plan then paid tiers.
 ## Contact
 
 - Email: https://example.com/contact
+- [Email me](mailto:hi@example.com): send a note
