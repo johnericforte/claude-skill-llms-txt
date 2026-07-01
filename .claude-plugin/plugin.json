@@ -1,0 +1,9 @@
+{
+  "name": "llms-txt",
+  "description": "Use when reading, writing, editing, reviewing, auditing, or generating an llms.txt, llms-full.txt, llms-ctx.txt, llms-ctx-full.txt, or per-page .md file, across the llmstxt.org and Mintlify specs. Use when a site needs AI-ingestion text files validated or authored. Not for general markdown, robots.txt, or sitemap work.",
+  "version": "0.1.0",
+  "author": { "name": "Eric Forte", "url": "https://www.ericforte.com" },
+  "homepage": "https://github.com/johnericforte/claude-skill-llms-txt",
+  "repository": "https://github.com/johnericforte/claude-skill-llms-txt",
+  "license": "MIT"
+}

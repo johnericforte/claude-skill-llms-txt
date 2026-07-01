@@ -1,0 +1,12 @@
+{
+  "name": "ericforte-llms-txt",
+  "description": "Eric Forte's llms.txt family skill: validate and author llms.txt, llms-full.txt, llms-ctx, and per-page .md across the llmstxt.org and Mintlify specs.",
+  "owner": { "name": "Eric Forte", "url": "https://www.ericforte.com" },
+  "plugins": [
+    {
+      "name": "llms-txt",
+      "source": "./",
+      "description": "Validate, author, and generate the full llms.txt file family across the llmstxt.org and Mintlify specs."
+    }
+  ]
+}
