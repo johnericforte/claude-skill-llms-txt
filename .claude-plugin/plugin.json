@@ -1,9 +1,11 @@
 {
   "name": "llms-txt",
+  "displayName": "llms.txt Family",
   "description": "Validate, author, and generate the llms.txt file family (llms.txt, llms-full.txt, llms-ctx, per-page .md) to the llmstxt.org and Mintlify specs, so a site passes Google Lighthouse Agentic Browsing and reads cleanly for AI search (GEO and AEO). Use when reading, writing, editing, auditing, or generating any of these files. Not for general markdown, robots.txt, or sitemap work.",
   "version": "0.2.0",
   "author": { "name": "Eric Forte", "url": "https://www.ericforte.com" },
   "homepage": "https://github.com/johnericforte/claude-skill-llms-txt",
   "repository": "https://github.com/johnericforte/claude-skill-llms-txt",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["llms.txt", "llms-full.txt", "llms-ctx", "llmstxt", "geo", "aeo", "agentic-browsing", "lighthouse", "pagespeed", "ai-search", "seo", "mintlify"]
 }
