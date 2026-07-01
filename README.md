@@ -8,15 +8,17 @@
 
 By [Eric Forte](https://www.ericforte.com), AI Automation Engineer.
 
-**claude-skill-llms-txt** is a Claude skill (and Claude Code plugin) that checks and builds the files AI engines read: `llms.txt`, `llms-full.txt`, `llms-ctx.txt`, `llms-ctx-full.txt`, and per-page `.md`. It aligns them to the llmstxt.org spec and the Mintlify convention, which is what Google's Lighthouse **Agentic Browsing** score in PageSpeed Insights checks under "llms.txt follows recommendations." This is generative engine optimization (GEO) and answer engine optimization (AEO) for the era where ChatGPT, Perplexity, Claude, and Google AI Overviews read your site directly.
+**claude-skill-llms-txt** is a Claude skill (and Claude Code plugin) that checks and builds the files AI engines read: `llms.txt`, `llms-full.txt`, `llms-ctx.txt`, `llms-ctx-full.txt`, and per-page `.md`. It aligns them to the llmstxt.org spec and the Mintlify convention, which is what Google's Lighthouse **Agentic Browsing** score in PageSpeed Insights checks under "llms.txt follows recommendations." This is generative engine optimization (GEO) and answer engine optimization (AEO): making your site readable by the models behind ChatGPT, Perplexity, Claude, and Google AI Overviews.
 
 ## Why I built it
 
-I ran ericforte.com through PageSpeed Insights and it passed the Agentic Browsing score 3/3. One passed audit read:
+I ran ericforte.com through PageSpeed Insights and saw a metric I had not seen before: Agentic Browsing. I looked into what it was, then scored a perfect 3/3, which surprised me since all I had was a basic llms.txt. That made me want to know what Google expects from the format. So I read the spec, audited my own file, found things to fix, and built this skill to get it right every time. Sharing it in case it helps you.
+
+One of the audits I passed read:
 
 > **llms.txt follows recommendations.** If your llms.txt file does not follow recommendations, large language models may not be able to understand how you want your website to be crawled or used for training. The llms.txt file should be a Markdown file containing at least one H1 header.
 
-That check ([Chrome Lighthouse Agentic Browsing scoring](https://developer.chrome.com/docs/lighthouse/agentic-browsing/scoring)) is the reason this skill exists. Passing the header check is the floor. Following the full spec, keeping the file in sync, and adding the rest of the family is the work, and doing it by hand is easy to get subtly wrong. This skill makes it repeatable, for my site and yours.
+Passing that header check is the floor. Following the full llmstxt.org spec, keeping the file current, and building the companion files (`llms-full.txt`, the context files, and per-page `.md`) is the actual work, and by hand it is easy to get subtly wrong. Source: [Chrome Lighthouse Agentic Browsing scoring](https://developer.chrome.com/docs/lighthouse/agentic-browsing/scoring).
 
 ## What is llms.txt?
 
@@ -24,7 +26,7 @@ That check ([Chrome Lighthouse Agentic Browsing scoring](https://developer.chrom
 
 ## What is Google Agentic Browsing scoring?
 
-Agentic Browsing is a category in Google's Lighthouse (and PageSpeed Insights) that measures how ready a site is for AI agents to read and act on, using deterministic audits and a fractional pass score. Its "llms.txt follows recommendations" audit checks that your `llms.txt` is a Markdown file with at least one H1. This skill validates that and the rest of the llmstxt.org grammar, so the check passes and the file is genuinely useful to the models behind AI search.
+Agentic Browsing is a category in Google's Lighthouse (and PageSpeed Insights) that measures how ready a site is for AI agents to read and act on, using deterministic audits and a fractional pass score. Its "llms.txt follows recommendations" audit checks that your `llms.txt` is a Markdown file with at least one H1. This skill validates that and the rest of the llmstxt.org grammar, so the check passes and the file is useful to the models behind AI search.
 
 ## What this skill does
 
@@ -41,7 +43,7 @@ Anyone who wants their site read correctly by AI search and to pass Google's Age
 
 ## Install
 
-### Option A: git clone (works today)
+### Option A: git clone
 
 ```bash
 git clone https://github.com/johnericforte/claude-skill-llms-txt.git
@@ -116,7 +118,7 @@ Built by **Eric Forte**, AI Automation Engineer.
 
 ## Changelog
 
-- **0.2.0**: Validator now flags non-link content and non-fetchable link targets inside H2 sections, and checks `llms-full.txt` for an H1 and index-vs-dump shape. Added `reference/stacks.md` for serving, discovery headers, and per-page `.md` across static generators, Next.js/Vercel, Netlify, Apache, Nginx, WordPress, and managed docs. Rewrote the context-file guidance for how the tool actually behaves.
+- **0.2.0**: Validator now flags non-link content and non-fetchable link targets inside H2 sections, and checks `llms-full.txt` for an H1 and index-vs-dump shape. Added `reference/stacks.md` for serving, discovery headers, and per-page `.md` across static generators, Next.js/Vercel, Netlify, Apache, Nginx, WordPress, and managed docs. Rewrote the context-file guidance for how the tool behaves.
 - **0.1.0**: Initial release: validator, spec reference, and auto-activation hooks.
 
 ## License
