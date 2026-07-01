@@ -12,7 +12,7 @@ By [Eric Forte](https://www.ericforte.com), AI Automation Engineer.
 
 ## Why I built it
 
-I ran ericforte.com through PageSpeed Insights and saw a metric I had not seen before: Agentic Browsing. I looked into what it was, then scored a perfect 3/3, which surprised me since all I had was a basic llms.txt. That made me want to know what Google expects from the format. So I read the spec, audited my own file, found things to fix, and built this skill to get it right every time. Sharing it in case it helps you.
+In May 2026 Google shipped a new Lighthouse category, Agentic Browsing, in PageSpeed Insights. I ran ericforte.com through it and passed 3/3, since I already had llms.txt and llms-full.txt in place. Passing still made me curious about what Google expects from the llms.txt format, so I built this skill, then audited my own files with it. Sharing it in case it helps you.
 
 One of the audits I passed read:
 
@@ -26,7 +26,7 @@ Passing that header check is the floor. Following the full llmstxt.org spec, kee
 
 ## What is Google Agentic Browsing scoring?
 
-Agentic Browsing is a category in Google's Lighthouse (and PageSpeed Insights) that measures how ready a site is for AI agents to read and act on, using deterministic audits and a fractional pass score. Its "llms.txt follows recommendations" audit checks that your `llms.txt` is a Markdown file with at least one H1. This skill validates that and the rest of the llmstxt.org grammar, so the check passes and the file is useful to the models behind AI search.
+Agentic Browsing is a category Google added to Lighthouse (version 13.3, May 2026) and PageSpeed Insights that measures how ready a site is for AI agents to read and act on. It is marked experimental and reports a pass ratio like 3/3 rather than a score out of 100. By default it checks three things: a clean accessibility tree, a stable layout (low Cumulative Layout Shift), and a valid llms.txt at the domain root. The llms.txt check wants a Markdown file with at least one H1. This skill validates that and the rest of the llmstxt.org grammar, so the check passes and the file is useful to the models behind AI search.
 
 ## What this skill does
 
