@@ -1,0 +1,13 @@
+# Example Site
+
+> Summary.
+
+### Not allowed heading in body
+
+## Pricing
+
+Free plan then paid tiers.
+
+## Contact
+
+- Email: https://example.com/contact

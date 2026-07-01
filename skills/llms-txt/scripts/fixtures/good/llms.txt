@@ -1,0 +1,14 @@
+# Example Site
+
+> One-line summary of the site for LLMs to understand the rest of the file.
+
+Some plain body context about the project. Any non-heading markdown is allowed here.
+
+## Docs
+
+- [Home](https://example.com/): The landing page.
+- [Guide](https://example.com/guide): How to get started.
+
+## Optional
+
+- [Sitemap](https://example.com/sitemap.xml): Every indexable URL.
