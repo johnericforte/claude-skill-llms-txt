@@ -20,6 +20,8 @@ One of the audits I passed read:
 
 Passing that header check is the floor. Following the full llmstxt.org spec, keeping the file current, and building the companion files (`llms-full.txt`, the context files, and per-page `.md`) is the actual work, and by hand it is easy to get subtly wrong. Source: [Chrome Lighthouse Agentic Browsing scoring](https://developer.chrome.com/docs/lighthouse/agentic-browsing/scoring).
 
+I wrote up the whole thing, what the check grades, why it exists, and why most of the llms.txt advice around it is wrong: [What Is Agentic Browsing in PageSpeed Insights?](https://www.ericforte.com/blog/agentic-browsing-pagespeed-insights)
+
 ## What is llms.txt?
 
 `llms.txt` is a Markdown file at the root of a site (`/llms.txt`) that gives large language models a curated map of your content: an H1 site name, a blockquote summary, and H2 sections listing your key pages as links. It was proposed by Jeremy Howard of Answer.AI in September 2024 and is now served by thousands of sites, including through Mintlify's auto-generation. `llms-full.txt`, the Mintlify companion, holds the full text of every page in one file.
